@@ -102,15 +102,15 @@ int main(void) {
             _T1IF=0; 
         }
         
-        //Contador milisegundos
-        if (ms == 1){
+        //Contador milisegundos NOTA: por efectos practicos de simulacion se bajo el contador de 1000 a 10
+        if (ms == 1000){
             u_s++;
             dato_u_s = aux_zero + u_s;
             reloj [7] = dato_u_s;
             cont_u_s++;
             s++;
             
-            //contador unidades de segundos NOTA: por efectos practicos de simulacion se bajo el contador cont_u_s de 1000 a 10
+            //contador unidades de segundos 
             if (cont_u_s == 10){
                 reloj [7] = '0';
                 dato_u_s = ' ';
